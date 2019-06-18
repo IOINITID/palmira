@@ -2,271 +2,226 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Пальмира - Контакты</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Пальмира - Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__main-wrapper">
-                <div class="header__navigation-wrapper">
-                    <nav class="header__navigation">
-                        <ul class="header__navigation-list">
-                            <li class="header__navigation-item"><a href="reviews.html">Видео и обзоры</a></li>
-                            <li class="header__navigation-item"><a href="contacts.html">Контакты</a></li>
-                            <li class="header__navigation-item"><a href="#">Наши партнеры</a></li>
-                            <li class="header__navigation-item"><a href="#">Кредит</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__contacts-wrapper">
-                    <ul class="header-contacts-list">
-                        <li><a class="header__contacts" href="tel:+78007779810">8 800 777 98 10</a></li>
-                        <li><address class="header__address"><span class="header__address-info">Наш адрес:</span>
-                                г.Ставрополь, ул. Серова 6/1
-                            </address></li>
-                    </ul>
-                </div>
+
+  <div class="header">
+
+    <div class="header-top">
+      <div class="header-navigation">
+        <nav>
+          <ul>
+            <li><a href="reviews.html">Видео и обзоры</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="partners.html">Наши партнеры</a></li>
+            <li><a href="credit.html">Кредит</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-address">
+        <ul>
+          <li><a href="tel:+78007779810">8 800 777 98 10</a></li>
+          <li>
+            <address>
+              <span>Наш адрес:</span>
+              г.Ставрополь, ул. Серова 6/1
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="devider"></div>
+
+    <div class="header-bottom">
+      <a href="#">
+        <img src="img/logo.svg" alt="Логотип Пальмира">
+      </a>
+      <a href="#" class="header-menu">Все разделы
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="20" height="2" rx="1" fill="#008DD2" />
+          <rect y="5" width="20" height="2" rx="1" fill="#008DD2" />
+          <rect y="10" width="20" height="2" rx="1" fill="#008DD2" />
+        </svg>
+      </a>
+      <form action="#">
+        <label for="">
+          <input type="text" placeholder="Поиск товаров на сайте...">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.6742 14.1131L12.2964 10.7353C13.2887 9.35104 13.724 7.64415 13.5157 5.95375C13.3074 4.26336 12.4708 2.71318 11.1722 1.61119C9.87356 0.509209 8.20792 -0.0639137 6.50617 0.0056681C4.80441 0.0752499 3.19111 0.782457 1.98678 1.98678C0.782457 3.19111 0.0752499 4.80441 0.0056681 6.50617C-0.0639137 8.20792 0.509209 9.87356 1.61119 11.1722C2.71318 12.4708 4.26336 13.3074 5.95375 13.5157C7.64415 13.7239 9.35104 13.2887 10.7353 12.2964L14.1131 15.6742C14.2156 15.7772 14.3374 15.859 14.4715 15.9149C14.6056 15.9707 14.7494 15.9997 14.8947 16C15.04 16.0003 15.1839 15.972 15.3183 15.9167C15.4526 15.8614 15.5747 15.7802 15.6777 15.6777C15.7807 15.5752 15.8624 15.4534 15.9183 15.3193C15.9742 15.1852 16.0031 15.0414 16.0035 14.8961C16.0038 14.7508 15.9755 14.6069 15.9202 14.4726C15.8649 14.3382 15.7837 14.2161 15.6812 14.1131H15.6742ZM3.55828 10.0169C2.81192 9.26926 2.34788 8.28594 2.24527 7.23452C2.14266 6.18309 2.40782 5.12861 2.99556 4.25078C3.58331 3.37294 4.45727 2.72608 5.46851 2.42041C6.47974 2.11474 7.56568 2.16918 8.54127 2.57446C9.51686 2.97974 10.3217 3.71078 10.8187 4.643C11.3157 5.57521 11.4741 6.65092 11.2668 7.68682C11.0596 8.72271 10.4995 9.65467 9.68214 10.3239C8.86474 10.9932 7.84056 11.3582 6.78413 11.357C6.18457 11.3578 5.5908 11.2398 5.03712 11.0097C4.48343 10.7797 3.98081 10.4423 3.55828 10.0169Z"
+              fill="#A6B9C2" />
+          </svg>
+        </label>
+      </form>
+      <div class="cart-wrapper">
+        <img src="img/cart.svg" alt="Корзина">
+        <div class="cart-links">
+          <a href="#">Корзина</a>
+          <a href="#">Нет товаров</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="devider"></div>
+
+  </div>
+
+  <div class="catalog">
+
+    <div class="breadcrumbs">
+      <a href="#">Главная</a>
+      <span>/</span>
+      <a href="#">Лазерные нивелиры, уровни</a>
+    </div>
+
+    <h2>Лазерные нивелиры, уровни</h2>
+
+    <div class="filter-wrapper">
+      <span>Сортировать:</span>
+      <a href="#">Сначало новые
+        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="1.16667" width="1.64991" height="9.89947" rx="0.824956" transform="rotate(-45 0 1.16667)"
+            fill="#008DD2" />
+          <rect x="12.8335" width="1.64991" height="9.89947" rx="0.824956" transform="rotate(45 12.8335 0)"
+            fill="#008DD2" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="catalog-content">
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#" class="active">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+          <li>
+            <a href="#">Раздел товаров</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="catalog-items-wrapper">
+        <div class="main-items">
+          <div class="items-wrapper">
+            <div class="item-wrapper">
+              <img src="img/image-item-2.jpg" alt="">
+              <p class="item-category">Лазерное оборудование</p>
+              <h3 class="item-title">Лазерный уровень INFINITER CL2</h3>
+              <p class="item-description">Рабочий диапазон: 10 м</p>
+              <p class="item-description">Вес: 180 г</p>
+              <a href="#" class="item-link">Подробнее</a>
             </div>
-            <section class="header__intro">
-                <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип Пальмира"></a>
-                <a class="header__menu" href="#">
-                    <p class="header__menu-text">Все разделы</p>
-                </a>
-                <input type="text" class="header__search" placeholder="Поиск товаров на сайте...">
-                <a href="#"><img src="img/search-icon.svg" alt="Иконка поиска" class="header__search-icon"></a>
-                <div class="header__cart-wrapper">
-                    <img class="header__cart-icon" src="img/cart.svg" alt="Корзина">
-                    <div class="header__cart-text">
-                        <a class="header__cart" href="#">Корзина</a>
-                        <a class="header__cart-bag" href="#">Нет товаров</a>
-                    </div>
-                </div>
+            <div class="item-wrapper">
+              <img src="img/image-item-3.jpg" alt="">
+              <p class="item-category">Лазерное оборудование</p>
+              <h3 class="item-title">Лазерный уровеньCONDTROL QB</h3>
+              <p class="item-description">Рабочий диапазон: 10 м</p>
+              <p class="item-description">Вес: 180 г</p>
+              <a href="#" class="item-link">Подробнее</a>
+            </div>
+            <div class="item-wrapper">
+              <img src="img/image-item-4.jpg" alt="">
+              <p class="item-category">Лазерное оборудование</p>
+              <h3 class="item-title">Лазерный уровень INFINITER CL360</h3>
+              <p class="item-description">Рабочий диапазон: 10 м</p>
+              <p class="item-description">Вес: 180 г</p>
+              <a href="#" class="item-link">Подробнее</a>
+            </div>
+            <div class="item-wrapper">
+              <img src="img/image-item-6.jpg" alt="">
+              <p class="item-category">Лазерное оборудование</p>
+              <h3 class="item-title">Лазерный дальномер CONDTROL XP4</h3>
+              <p class="item-description">Рабочий диапазон: 10 м</p>
+              <p class="item-description">Вес: 180 г</p>
+              <a href="#" class="item-link">Подробнее</a>
+            </div>
+            <div class="item-wrapper">
+              <img src="img/image-item-7.jpg" alt="">
+              <p class="item-category">Лазерное оборудование</p>
+              <h3 class="item-title">Нивелир лазерный Infiniter CL 360 -3</h3>
+              <p class="item-description">Рабочий диапазон: 10 м</p>
+              <p class="item-description">Вес: 180 г</p>
+              <a href="#" class="item-link">Подробнее</a>
+            </div>
+            <div class="item-wrapper">
+              <img src="img/image-item-8.jpg" alt="">
+              <p class="item-category">Лазерное оборудование</p>
+              <h3 class="item-title">Нивелир лазерный REDTRACE REX 2.0</h3>
+              <p class="item-description">Рабочий диапазон: 10 м</p>
+              <p class="item-description">Вес: 180 г</p>
+              <a href="#" class="item-link">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            </section>
-        </header>
-
-        <main class="main">
-
-            <section class="main__catalog">
-                <div class="main__catalog-info">
-                    <ul class="main__catalog-breadcrumbs-list">
-                        <li class="main__catalog-breadcrumbs-item"><a href="#">Главная</a></li>
-                        <div class="main__catalog-breadcrumbs-slash">
-                            <pre> / </pre>
-                        </div>
-                        <li class="main__catalog-breadcrumbs-item"><a href="#">Лазерные нивелиры, уровни</a></li>
-                    </ul>
-                    <h2 class="main__catalog-title">Лазерные нивелиры, уровни</h2>
-
-                    <div class="main__catalog-filter-wrapper">
-                        <p class="main__catalog-filter-text">Сортировать:</p>
-                        <a class="main-catalog-filter-item" href="#">Сначала новые</a>
-                    </div>
-
-                    <div class="main__catalog-wrapper">
-                            <div class="main__sidebar-wrapper">
-                                    <div class="main__sidebar-menu">
-                                        <ul class="main__sidebar-menu-list">
-                                            <!-- <h3 class="main__sidebar-menu-title">ЛАЗЕРНОЕ ОБОРУДОВАНИЕ</h3> -->
-                                            <li class="main__sidebar-menu-item"><a href="catalog.html">Лазерные нивелиры, уровни</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Лазерные рулетки, дальномеры</a></li>
-                                            <!-- <h3 class="main__sidebar-menu-title">АКСЕССУАРЫ</h3> -->
-                                            <li class="main__sidebar-menu-item"><a href="#">Штативы</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Рейки</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Рулетки и дорожные колеса</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Для лазерных нивелиров</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Для тахеометров</a></li>
-                                            <!-- <h3 class="main__sidebar-menu-title">ГЕОДЕЗИЧЕСКОЕ ОБОРУДОВАНИЕ</h3> -->
-                                            <li class="main__sidebar-menu-item"><a href="#">Теодолиты</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Оптические нивелиры</a></li>
-                                            <!-- <h3 class="main__sidebar-menu-title">KAPRO</h3> -->
-                                            <li class="main__sidebar-menu-item"><a href="#">Уровни и угольники</a></li>
-                                            <li class="main__sidebar-menu-item"><a href="#">Лазерный инструмент</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                        <ul class="catalog__list">
-                            <li class="catalog__item">
-                                <a class="" href="product.html"><img class="catalog__item-image" src="img/image-item-1.jpg"
-                                        alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень RGK PR-3G</a>
-                                <p class="catalog__item-description">Рабочее расстояние: 20 м<br>Вес: 0,726 кг</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-2.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень INFINITER CL2</a>
-                                <p class="catalog__item-description">Рабочий диапазон: 10 м<br>Вес: 180 г</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-3.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень CONDTROL QB</a>
-                                <p class="catalog__item-description">Рабочий диапазон: 10 м<br>Вес: 175 г</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-4.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень INFINITER CL360</a>
-                                <p class="catalog__item-description">Рабочий диапазон: 20 м<br>Вес: 0,42 кг</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-5.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный дальномер CONDTROL XP1</a>
-                                <p class="catalog__item-description">Рабочее расстояние: до 50 м<br>Гарантия: 36 мес</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-6.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный дальномер CONDTROL XP4</a>
-                                <p class="catalog__item-description">Точность: 3 мм на 10 м<br>Гарантия: 2 года</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-7.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Нивелир лазерный Infiniter CL 360 -3</a>
-                                <p class="catalog__item-description">Точность: 3 мм на 10 м<br>Гарантия: 2 года</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-8.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Нивелир лазерный REDTRACE REX 2.0</a>
-                                <p class="catalog__item-description">Точность: 3 мм на 10 м<br>Гарантия: 2 года</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-1.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень RGK PR-3G</a>
-                                <p class="catalog__item-description">Рабочее расстояние: 20 м<br>Вес: 0,726 кг</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-2.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень INFINITER CL2</a>
-                                <p class="catalog__item-description">Рабочий диапазон: 10 м<br>Вес: 180 г</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-3.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень CONDTROL QB</a>
-                                <p class="catalog__item-description">Рабочий диапазон: 10 м<br>Вес: 175 г</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-4.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный уровень INFINITER CL360</a>
-                                <p class="catalog__item-description">Рабочий диапазон: 20 м<br>Вес: 0,42 кг</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-5.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный дальномер CONDTROL XP1</a>
-                                <p class="catalog__item-description">Рабочее расстояние: до 50 м<br>Гарантия: 36 мес</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-6.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Лазерный дальномер CONDTROL XP4</a>
-                                <p class="catalog__item-description">Точность: 3 мм на 10 м<br>Гарантия: 2 года</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-7.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Нивелир лазерный Infiniter CL 360 -3</a>
-                                <p class="catalog__item-description">Точность: 3 мм на 10 м<br>Гарантия: 2 года</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                            <li class="catalog__item">
-                                <a class="" href="#"><img class="catalog__item-image" src="img/image-item-8.jpg" alt=""></a>
-                                <p class="catalog__item-type">Лазерное оборудование</p>
-                                <a class="catalog__item-name" href="#">Нивелир лазерный REDTRACE REX 2.0</a>
-                                <p class="catalog__item-description">Точность: 3 мм на 10 м<br>Гарантия: 2 года</p>
-                                <a class="catalog__about-item" href="#">Подробнее</a>
-                            </li>
-                        </ul>
-                    </div>
-
-            </section>
-
-        </main>
     </div>
 
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <a href="index.html"><img class="footer__logo" src="img/footer-logo.svg" alt="Логотип Пальмира"></a>
-            <p class="footer__copyright">Все права защищены (с) 2018<br>design by ELIT-IT</p>
-            <ul class="footer__item-type-list">
-                <li class="footer__item-type-item"><a href="catalog.html">Лазерное оборудование</a></li>
-                <li class="footer__item-type-item"><a href="#">Геодезическое оборудование</a></li>
-                <li class="footer__item-type-item"><a href="#">KAPRO</a></li>
-                <li class="footer__item-type-item"><a href="#">Аксессуары</a></li>
-            </ul>
-            <ul class="footer__info-list">
-                <li class="footer__info-item"><a href="reviews.html">Видео и обзоры</a></li>
-                <li class="footer__info-item"><a href="contacts.html">Контакты</a></li>
-                <li class="footer__info-item"><a href="#">Наши партнёры</a></li>
-                <li class="footer__info-item"><a href="#">Кредит</a></li>
-            </ul>
-            <ul class="footer__contacts-list">
-                <li class="footer__contacts-tel"><a href="tel:+78007779810">8 800 777 98 10</a></li>
-                <li class="footer__contacts-address"><address>г.Ставрополь, ул. Серова 6/1</address></li>
-            </ul>
-        </div>
-    </footer>
-    <div class="popup">
-        <div class="popup__wrapper">
-            <ul class="popup__list">
-                <h3 class="popup__type-item">ЛАЗЕРНОЕ ОБОРУДОВАНИЕ</h3>
-                <li class="popup__items"><a href="catalog.html">Лазерные нивелиры, уровни</a></li>
-                <li class="popup__items"><a href="#">Лазерные рулетки, дальномеры</a></li>
-            </ul>
-            <ul class="popup__list">
-                <h3 class="popup__type-item">АКСЕССУАРЫ</h3>
-                <li class="popup__items"><a href="#">Штативы</a></li>
-                <li class="popup__items"><a href="#">Рейки</a></li>
-                <li class="popup__items"><a href="#">Рулетки и дорожные колеса</a></li>
-                <li class="popup__items"><a href="#">Для лазерных нивелиров</a></li>
-                <li class="popup__items"><a href="#">Для тахеометров</a></li>
-            </ul>
-        </div>
-        <div class="popup__wrapper">
-            <ul class="popup__list">
-                <h3 class="popup__type-item">ГЕОДЕЗИЧЕСКОЕ ОБОРУДОВАНИЕ</h3>
-                <li class="popup__items"><a href="#">Теодолиты</a></li>
-                <li class="popup__items"><a href="#">Оптические нивелиры</a></li>
-            </ul>
-            <ul class="popup__list">
-                <h3 class="popup__type-item">KAPRO</h3>
-                <li class="popup__items"><a href="#">Уровни и угольники</a></li>
-                <li class="popup__items"><a href="#">Лазерный инструмент</a></li>
-            </ul>
-        </div>
+  </div>
+
+  <div class="footer">
+
+    <div class="footer-wrapper">
+
+      <a href="#"><img src="img/footer-logo.svg" alt="Логотип Пальмира"></a>
+      <p>Все права защищены (с) 2018<br>design by ELIT-IT</p>
+      <ul>
+        <li><a href="catalog.html">Лазерное оборудование</a></li>
+        <li><a href="#">Геодезическое оборудование</a></li>
+        <li><a href="#">KAPRO</a></li>
+        <li><a href="#">Аксессуары</a></li>
+      </ul>
+      <ul>
+        <li><a href="reviews.html">Видео и обзоры</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="#">Наши партнёры</a></li>
+        <li><a href="#">Кредит</a></li>
+      </ul>
+      <ul>
+        <li class="footer-tel"><a href="tel:+78007779810">8 800 777 98 10</a></li>
+        <li>
+          <address>г.Ставрополь, ул. Серова 6/1</address>
+        </li>
+      </ul>
+
+
     </div>
-    <script src="js/script.js"></script>
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
