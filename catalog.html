@@ -45,7 +45,8 @@
       <a href="index.html">
         <img src="img/logo.svg" alt="Логотип Пальмира">
       </a>
-      <a href="#" class="header-menu">Все разделы
+      <a href="#" class="header-menu" onmouseover="document.querySelector('.popup').classList.remove('hide');">Все
+        разделы
         <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="20" height="2" rx="1" fill="#008DD2" />
           <rect y="5" width="20" height="2" rx="1" fill="#008DD2" />
@@ -215,6 +216,60 @@
         </li>
       </ul>
 
+
+    </div>
+
+  </div>
+
+  <div class="popup hide" onmouseover="document.querySelector('.popup').classList.remove('hide');"
+    onmouseout="document.querySelector('.popup').classList.add('hide');">
+
+    <div class="popup-items">
+
+      <div class="popup-items-wrapper">
+
+        <div class="popup-item">
+          <h3>ЛАЗЕРНОЕ ОБОРУДОВАНИЕ</h3>
+          <ul>
+            <li><a href="#">Лазерные нивелиры, уровни</a></li>
+            <li><a href="#">Лазерные рулетки, дальномеры</a></li>
+          </ul>
+        </div>
+
+        <div class="popup-item">
+          <h3> АКСЕССУАРЫ</h3>
+          <ul>
+            <li><a href="#">Штативы</a></li>
+            <li><a href="#">Рейки</a></li>
+            <li><a href="#">Рулетки и дорожные колеса</a></li>
+            <li><a href="#">Для лазерных нивелиров</a></li>
+            <li><a href="#">Для тахеометров</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="popup-items-wrapper">
+
+        <div class="popup-item">
+          <h3>ГЕОДЕЗИЧЕСКОЕ ОБОРУДОВАНИЕ</h3>
+          <ul>
+            <li><a href="#">Теодолиты</a></li>
+            <li><a href="#">Оптические нивелиры</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="popup-item">
+          <h3>KAPRO</h3>
+          <ul>
+            <li><a href="#">Уровни и угольники</a></li>
+            <li><a href="#">Лазерный инструмент</a></li>
+          </ul>
+        </div>
+
+      </div>
 
     </div>
 
