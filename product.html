@@ -19,10 +19,10 @@
       <div class="header-navigation">
         <nav>
           <ul>
-            <li><a href="reviews.html">Видео и обзоры</a></li>
+            <li><a href="video.html">Видео и обзоры</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="partners.html">Наши партнеры</a></li>
-            <li><a href="credit.html">Кредит</a></li>
+            <li><a href="#">Наши партнеры</a></li>
+            <li><a href="#">Кредит</a></li>
           </ul>
         </nav>
       </div>
@@ -42,7 +42,7 @@
     <div class="devider"></div>
 
     <div class="header-bottom">
-      <a href="#">
+      <a href="index.html">
         <img src="img/logo.svg" alt="Логотип Пальмира">
       </a>
       <a href="#" class="header-menu">Все разделы
@@ -89,11 +89,17 @@
 
       <div class="product-images">
         <div class="product-images-wrapper">
-          <img src="img/product.jpg" alt="">
-          <img src="img/product.jpg" alt="">
-          <img src="img/product.jpg" alt="">
+          <a href="javascript:l_image ('img/product.jpg')">
+            <img src="img/product.jpg" alt="">
+          </a>
+          <a href="javascript:l_image ('img/product.jpg')">
+            <img src="img/product.jpg" alt="">
+          </a>
+          <a href="javascript:l_image ('img/product.jpg')">
+            <img src="img/product.jpg" alt="">
+          </a>
         </div>
-        <img src="img/product.jpg" alt="">
+        <img src="img/product.jpg" alt="" name="largeIMG">
       </div>
 
       <div class="product-info" id="tabs">
@@ -279,7 +285,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>
