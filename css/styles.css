@@ -24,6 +24,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 12px 0 15px 0;
+  position: relative;
 }
 
 .header .header-top .header-navigation nav ul {
@@ -1030,7 +1031,7 @@ body {
   border-radius: 4px;
   position: absolute;
   top: 155px;
-  left: 283px;
+  left: 222px;
   padding: 25px 21px 7px 16px;
 }
 

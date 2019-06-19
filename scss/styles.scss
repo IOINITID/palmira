@@ -13,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     padding: 12px 0 15px 0;
+    position: relative;
 
     .header-navigation {
       nav {
@@ -739,13 +740,11 @@ body {
           }
 
           a {
-            // background: #008DD2;
             background: #FFFFFF;
             border: 1px solid #D7E1E8;
             border-radius: 4px 0px 0px 4px;
             font-size: 14px;
             line-height: 16px;
-            // color: #FFFFFF;
             color: #94A2A8;
             padding: 14px 63px 13px 63px;
             text-decoration: none;
@@ -888,7 +887,7 @@ body {
   border-radius: 4px;
   position: absolute;
   top: 155px;
-  left: 283px;
+  left: 222px;
   padding: 25px 21px 7px 16px;
 
   &:before {
