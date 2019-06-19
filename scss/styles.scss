@@ -728,8 +728,14 @@ body {
         display: flex;
         margin-bottom: 32px;
 
-        .product-info-tabs {
-          display: flex;
+        li {
+          padding: 0;
+          display: block;
+
+          &:before {
+            content: "";
+            margin: 0;
+          }
 
           a {
             background: #008DD2;
@@ -739,8 +745,10 @@ body {
             color: #FFFFFF;
             padding: 14px 63px 13px 63px;
             text-decoration: none;
+          }
 
-            &:nth-child(2) {
+          &:nth-child(2) {
+            a {
               background: #FFFFFF;
               border: 1px solid #D7E1E8;
               border-radius: 0px 4px 4px 0px;
@@ -750,17 +758,21 @@ body {
               padding: 14px 42px 13px 42px;
             }
           }
-        }
 
-        a {
-          margin-left: auto;
-          font-size: 14px;
-          line-height: 16px;
-          color: #FFFFFF;
-          background: #F66767;
-          border-radius: 4px;
-          padding: 14px 36px 13px 36px;
-          text-decoration: none;
+          &:nth-child(3) {
+            margin-left: auto;
+
+            a {
+              margin-left: auto;
+              font-size: 14px;
+              line-height: 16px;
+              color: #FFFFFF;
+              background: #F66767;
+              border-radius: 4px;
+              padding: 14px 36px 13px 36px;
+              text-decoration: none;
+            }
+          }
         }
       }
 
@@ -780,11 +792,39 @@ body {
         line-height: 23px;
         color: #000000;
         padding-bottom: 20px;
+      }
 
-        b {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 30px;
+      h3 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        padding-bottom: 20px;
+      }
+
+      .product-description {
+        .description-title {
+          table {
+            tr {
+              display: flex;
+              align-items: center;
+
+              td {
+                font-size: 14px;
+                line-height: 33px;
+                color: #94A2A8;
+                width: 303px;
+                align-self: flex-start;
+
+                &:nth-child(2) {
+                  font-size: 14px;
+                  line-height: 33px;
+                  color: #384951;
+                  width: 302px;
+                  align-self: center;
+                }
+              }
+            }
+          }
         }
       }
 
@@ -820,4 +860,9 @@ body {
       }
     }
   }
+}
+
+.item-active {
+  background: #008DD2;
+  color: #FFFFFF;
 }
